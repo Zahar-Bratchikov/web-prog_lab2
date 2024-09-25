@@ -441,6 +441,84 @@ p {
 
 /* Медиа запросы для адаптива */
 
+@media (max-width: 2560px) {
+  a {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .footer .text_box h1 {
+    font-size: 40px;
+  }
+
+  .footer .btn_last {
+    font-size: 18px;
+  }
+
+  .footer .gpt_box {
+    gap: 30px;
+  }
+
+  .rights_reserved .rights_reserved_text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1440px) {
+  a {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .footer .text_box h1 {
+    font-size: 35px;
+  }
+
+  .footer .btn_last {
+    font-size: 16px;
+  }
+
+  .footer .gpt_box {
+    gap: 25px;
+  }
+
+  .rights_reserved .rights_reserved_text {
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .page {
     align-content: center;
@@ -531,14 +609,50 @@ p {
     row-gap: 0;
   }
 
-  .future_here {
-    column-gap: 0;
-    flex-direction: column;
-    row-gap: 4rem;
+  a {
+    font-size: 16px;
   }
 
-  .future_here .future_here__left {
-    row-gap: 1rem;
+  p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .footer .text_box h1 {
+    font-size: 30px;
+  }
+
+  .footer .btn_last {
+    font-size: 14px;
+  }
+
+  .footer .gpt_box {
+    gap: 20px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .footer .logo,
+  .footer .links,
+  .footer .company,
+  .footer .get_in_touch {
+    width: 48%; 
+  }
+
+  .rights_reserved .rights_reserved_text {
+    font-size: 10px;
   }
 }
 
@@ -606,18 +720,23 @@ p {
 
 @media screen and (max-width: 765px) {
   a {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   p {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 46px;
   }
 
   h2 {
+    font-size: 27px;
+  }
+
+  h3 {
     font-size: 19px;
   }
 
@@ -943,12 +1062,15 @@ p {
 
 .footer .links {
   margin: 0 auto;
-  padding-left: 15%;
 }
 
 .footer .company, 
 .footer .get_in_touch {
   margin-left: auto;
+}
+
+.footer .get_in_touch p {
+  word-wrap: break-word; 
 }
 
 .footer .box_menu {
@@ -1094,54 +1216,105 @@ p {
   text-align: center;  
 }
 
-.footer .GPT_box {
+.footer .gpt_box {
   gap: 2%;
 }
 
 @media (max-width: 768px) {
-  .footer .footer_header {
-    width: 100%;
+  a {
+    font-size: 14px;
   }
 
-  .footer .text_box {
-    margin-top: 20px;
-    width: 100%;
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 46px;
+  }
+
+  h2 {
+    font-size: 27px;
+  }
+
+  h3 {
+    font-size: 19px;
+  }
+
+  .footer .text_box h1 {
+    font-size: 25px;
   }
 
   .footer .btn_last {
-    width: auto;
-    font-size: 16px;
+    font-size: 14px;
+    padding: 1rem 2.5rem;
   }
 
-  .footer .GPT_box {
+  .footer .gpt_box {
     flex-direction: column;
     align-items: center;
+    gap: 15px;
   }
 
-  .footer .Logo,
-  .footer .Links,
-  .footer .Company,
-  .footer .Get_in_touch {
+  .footer .box_menu {
+    width: 100%; /* Растянуть меню на всю ширину */
+  }
+
+  
+  .footer .logo,
+  .footer .links,
+  .footer .company,
+  .footer .get_in_touch {
     width: 100%; 
+  }
+
+  .rights_reserved .rights_reserved_text {
+    font-size: 8px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
+  a {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .footer {
+    width: 425px;
+  }
+
   .footer .text_box h1 {
     font-size: 20px;
   }
 
   .footer .btn_last {
-    font-size: 14px;
+    font-size: 12px;
     padding: 0.8rem 3rem;
   }
 
-  .footer .GPT_box {
-    gap: 10px; 
+  .footer .gpt_box {
+    gap: 3%; 
   }
 
-.rights_reserved .rights_reserved_text {
+  .rights_reserved .rights_reserved_text {
     font-size: 8px;
-    padding: 5px 0;
+    padding: 0 0;
   }
 }
