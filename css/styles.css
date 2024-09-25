@@ -490,7 +490,7 @@ p {
 
   .header .header__menu .menu .menu__item a {
     font-size: 48px;
-  }
+  } 
 
   .hero_section {
     flex-direction: column;
@@ -684,92 +684,129 @@ p {
     border-bottom: 1px solid transparent;
 }
 
-@media screen and (max-width: 1220px) {
-  .header{
-    display: none;
-  }
-
+@media screen and (max-width: 1024px) {
   .woman-vr{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .woman-vr .woman-vr__left{
-    margin-left: 18rem;
     margin-bottom: 2rem;
   }
 
   .woman-vr .woman-vr__right{
-    margin-left: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 1rem;
     width: 70%;
+    text-align: center;
   }
+
+
 }
 
-.begin{
-  width: 73rem;
-  height: 10.8rem;
-  border-radius: 0.7rem;
-  border: 1px solid #000;
+.begin {
+  width: 100%;
+  max-height: 172.65px;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem;
   background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0.7rem;
+  transition: max-width 0.3s ease-in-out;
 }
 
-.begin .rectangle{
+.begin .rectangle {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 1.75rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.begin .rectangle .begin_left{
-  margin-top: 2rem;
-  margin-left: 2.8rem;
+
+.begin .begin_left {
+  flex: 1;
 }
 
-.begin .begin_left .text{
+
+.begin .btn_cont {
+  flex: 0;
+}
+
+.begin .text {
   background: #0E0E0E;
   background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: 12px;
+  margin: 0;
 }
 
-.begin .begin_left .text2{
+.begin .text2 {
   color: #000;
   font-family: Manrope;
   font-size: 24px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 40px;
+  font-weight: bold;
+  line-height: 2.188rem;
 }
 
-.begin .rectangle .btn_cont{
-  margin-top: 3.5rem;
-  margin-right: 1.7rem;
-}
-
-.begin .rectangle .button_begin{
+.begin .button_begin {
   background-color: #000;
   color: #fff;
   width: 190px;
   height: 60px;
-  border-radius:  40px;
-  border: #000;
+  border-radius: 40px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-@media screen and (max-width: 1164px){
-  .begin{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 30rem;
-    height: 30rem;
-    border-radius: 0.7rem;
-    border: 1px solid #000;
-    background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+.begin .button_begin:hover {
+  background-color: #ae67fa;
+}
+
+
+@media screen and (max-width: 880px) {
+  .begin {
+    max-width: 700px;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .begin {
+    max-width: 500px;
+    max-height: 100%;
   }
 
+  .begin .rectangle {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .begin .begin_left {
+    text-align: center;
+  }
+
+  .begin .btn_cont {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .begin .button_begin {
+    width: auto;
+    padding: 1rem 2rem;
+  }
 }
+
 
 .blog .header_blog {
   font-size: 62px;
@@ -805,7 +842,7 @@ p {
 .blog .container_for_block .large_block .blok_large {
   background-color: #042C54;
   width: 100%;
-  height: 288.5px; 
+  height: 288.5px;
   color: white;
   width: 417.03px;
   height: 406.71px;
