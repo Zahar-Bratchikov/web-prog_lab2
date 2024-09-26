@@ -1027,7 +1027,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1,5%;
-  margin-bottom: 5%;
+  margin-bottom: 1.5%;
   word-wrap: break-word; 
   word-break: break-word;
   white-space: normal; 
@@ -1062,11 +1062,17 @@ p {
 .footer .links {
   margin: 0 auto;
   padding-left: 15%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
 }
 
 .footer .company, 
 .footer .get_in_touch {
   margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
 }
 
 .footer .box_menu {
@@ -1080,6 +1086,8 @@ p {
   flex-direction: column;
   align-items: flex-start;
 }
+
+
 
 .footer .gpt_icon {
   margin-bottom: 10px;
@@ -1186,6 +1194,25 @@ p {
     justify-content: space-between; /* Равномерное распределение элементов */
   }
 
+}
+
+@media (min-width:481px) and (max-width: 765px){
+  .footer .footer_header .header_text_box{
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 860px){
+  .footer .gpt_box .logo,
+  .footer .gpt_box .links,
+  .footer .gpt_box .company,
+  .footer .gpt_box .get_in_touch{
+    min-width: 34%;
+  }
+
+  .footer .gpt_box .company {
+    text-align: left;
+  }
 }
 
 @media (max-width: 480px) {
