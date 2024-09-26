@@ -27,7 +27,8 @@
 /* Общие стили для всего приложения */
 
 body {
-  background: #031b34;
+  background: #040C18;
+  ;
   padding: 0 2rem;
   overflow: auto;
 }
@@ -144,7 +145,8 @@ p {
   position: fixed;
   justify-content: space-between;
   align-items: center;
-  background: #031b34;
+  background: #040C18;
+  ;
 }
 
 .header .header__logo .logo__link {
@@ -1036,7 +1038,7 @@ p {
 .footer .btn_last {
   display: flex;
   padding: 1rem 4rem;
-  background-color: #031B34;
+  background-color: #06182c;
   color: #fff;
   border: none;
   font-size: 18px;
