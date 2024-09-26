@@ -27,7 +27,8 @@
 /* Общие стили для всего приложения */
 
 body {
-  background: #031b34;
+  background: #040C18;
+  ;
   padding: 0 2rem;
   overflow: auto;
 }
@@ -144,7 +145,8 @@ p {
   position: fixed;
   justify-content: space-between;
   align-items: center;
-  background: #031b34;
+  background: #040C18;
+  ;
 }
 
 .header .header__logo .logo__link {
@@ -1027,7 +1029,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1,5%;
-  margin-bottom: 5%;
+  margin-bottom: 1.5%;
   word-wrap: break-word; 
   word-break: break-word;
   white-space: normal; 
@@ -1036,7 +1038,7 @@ p {
 .footer .btn_last {
   display: flex;
   padding: 1rem 4rem;
-  background-color: #031B34;
+  background-color: #06182c;
   color: #fff;
   border: none;
   font-size: 18px;
@@ -1062,11 +1064,17 @@ p {
 .footer .links {
   margin: 0 auto;
   padding-left: 15%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
 }
 
 .footer .company, 
 .footer .get_in_touch {
   margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
 }
 
 .footer .box_menu {
@@ -1080,6 +1088,8 @@ p {
   flex-direction: column;
   align-items: flex-start;
 }
+
+
 
 .footer .gpt_icon {
   margin-bottom: 10px;
@@ -1141,6 +1151,12 @@ p {
   .header {
     flex-direction: column;
   }
+
+  .footer .gpt_box {
+    flex-direction: row; /* Горизонтальная ориентация */
+    flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
+    justify-content: space-evenly; /* Равномерное распределение элементов */
+  }
 }
 
 
@@ -1174,16 +1190,30 @@ p {
     font-size: 16px;
   }
 
-  .footer .GPT_box {
-    flex-direction: column;
-    align-items: center;
+  .footer .gpt_box {
+    flex-direction: row; /* Горизонтальная ориентация */
+    flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
+    justify-content: space-between; /* Равномерное распределение элементов */
   }
 
-  .footer .Logo,
-  .footer .Links,
-  .footer .Company,
-  .footer .Get_in_touch {
-    width: 100%; 
+}
+
+@media (min-width:481px) and (max-width: 765px){
+  .footer .footer_header .header_text_box{
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 860px){
+  .footer .gpt_box .logo,
+  .footer .gpt_box .links,
+  .footer .gpt_box .company,
+  .footer .gpt_box .get_in_touch{
+    min-width: 34%;
+  }
+
+  .footer .gpt_box .company {
+    text-align: left;
   }
 }
 
@@ -1197,12 +1227,9 @@ p {
     padding: 0.8rem 3rem;
   }
 
-  .footer .GPT_box {
-    gap: 10px; 
-  }
-
-.rights_reserved .rights_reserved_text {
+  .rights_reserved .rights_reserved_text {
     font-size: 8px;
     padding: 5px 0;
   }
+
 }
