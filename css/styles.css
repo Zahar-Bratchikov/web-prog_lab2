@@ -1141,6 +1141,12 @@ p {
   .header {
     flex-direction: column;
   }
+
+  .footer .gpt_box {
+    flex-direction: row; /* Горизонтальная ориентация */
+    flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
+    justify-content: space-evenly; /* Равномерное распределение элементов */
+  }
 }
 
 
@@ -1174,17 +1180,12 @@ p {
     font-size: 16px;
   }
 
-  .footer .GPT_box {
-    flex-direction: column;
-    align-items: center;
+  .footer .gpt_box {
+    flex-direction: row; /* Горизонтальная ориентация */
+    flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
+    justify-content: space-between; /* Равномерное распределение элементов */
   }
 
-  .footer .Logo,
-  .footer .Links,
-  .footer .Company,
-  .footer .Get_in_touch {
-    width: 100%; 
-  }
 }
 
 @media (max-width: 480px) {
@@ -1197,12 +1198,9 @@ p {
     padding: 0.8rem 3rem;
   }
 
-  .footer .GPT_box {
-    gap: 10px; 
-  }
-
-.rights_reserved .rights_reserved_text {
+  .rights_reserved .rights_reserved_text {
     font-size: 8px;
     padding: 5px 0;
   }
+
 }
