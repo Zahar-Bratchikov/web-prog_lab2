@@ -1153,9 +1153,9 @@ p {
   }
 
   .footer .gpt_box {
-    flex-direction: row; /* Горизонтальная ориентация */
-    flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
-    justify-content: space-evenly; /* Равномерное распределение элементов */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
 
@@ -1191,9 +1191,9 @@ p {
   }
 
   .footer .gpt_box {
-    flex-direction: row; /* Горизонтальная ориентация */
-    flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
-    justify-content: space-between; /* Равномерное распределение элементов */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
 }
